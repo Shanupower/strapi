@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "completed_events",
+  "info": {
+    "singularName": "completed-event",
+    "pluralName": "completed-events",
+    "displayName": "Completed Event",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Headline": {
+      "type": "string"
+    },
+    "Shortdescription": {
+      "type": "string",
+      "maxLength": 1000
+    },
+    "Date_of_event": {
+      "type": "date"
+    },
+    "Poster": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}
